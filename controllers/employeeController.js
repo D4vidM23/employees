@@ -70,7 +70,7 @@ module.exports.updateEmployee = async function(req, res){
         },
         {
             where: {
-                id:req.params.id
+                id: req.params.id
             }
         });
     res.redirect('/');

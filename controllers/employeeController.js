@@ -84,3 +84,8 @@ module.exports.deleteEmployee = async function(req, res){
     });
     res.redirect('/')
 }
+
+module.exports.deleteAllEmployees = async function(req, res){
+    await Employee.destroy.all;
+    res.redirect('/')
+}

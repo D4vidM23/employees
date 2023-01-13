@@ -47,8 +47,8 @@ mixin employeeForm(url, employee, jobfiles, stateslist)
                 label(for='yearhired') Year Hired:
                 input(id='yearhired' name='yearhired' type='number' value=employee.yearhired)
 
-    div.form-buttons
-        a.button.cancel(href='/') Cancel
-        if employee.id
-            a.button.delete(href=`/delete/${employee.id}`) Delete Employee
-        button.button.submit(type='submit') Submit
+        div.form-buttons
+            a.button.cancel(href='/') Cancel
+            if employee.id
+                a.button.delete(href=`/delete/${employee.id}`) Delete Employee
+            button.button.submit(type='submit') Submit
